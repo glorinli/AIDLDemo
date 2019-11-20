@@ -27,4 +27,8 @@ class Album(val title: String?, val count: Int) : Parcelable {
             return arrayOfNulls(size)
         }
     }
+
+    override fun toString(): String {
+        return "[Album: $title - $count]"
+    }
 }

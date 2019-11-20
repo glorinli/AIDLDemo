@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".AlbumService" />
+        <service android:name=".AlbumService">
+            <intent-filter>
+                <action android:name="xyz.glorin.aidlservice.ALBUM_SERVICE" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
